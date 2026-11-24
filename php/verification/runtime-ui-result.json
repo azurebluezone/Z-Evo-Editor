@@ -1,0 +1,53 @@
+{
+  "steps": [
+    {
+      "name": "admin overview",
+      "ok": true,
+      "detail": "sqlite / 23 messages / 310 requests"
+    },
+    {
+      "name": "project present from UI create",
+      "ok": true,
+      "detail": "php/workspaces/zombiecoder-runtime"
+    },
+    {
+      "name": "write tools enabled",
+      "ok": true,
+      "detail": "write_file present in tools tab"
+    },
+    {
+      "name": "agent task finished",
+      "ok": true,
+      "detail": "completed"
+    },
+    {
+      "name": "metrics rendered",
+      "ok": true,
+      "detail": "rechecked: SESSION RUNS, PROVIDER TOTALS and REQUEST LOG rendered"
+    },
+    {
+      "name": "providers rendered",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mcp rendered",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "sessions rendered",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "browser console has no severe errors",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "ok": true,
+  "task_status": "completed",
+  "task_output": "{\n  \"ok\": true,\n  \"conversation_id\": \"conv_dQ-dWRfzaWku\",\n  \"project\": {\n    \"id\": \"proj_gGDP7hsSNiLT\",\n    \"name\": \"ZombieCoder Runtime\",\n    \"path\": \"/home/sahon/Downloads/skil/ai/php/workspaces/zombiecoder-runtime\"\n  },\n  \"provider\": \"ollama\",\n  \"model\": \"qwen2.5:1.5b\",\n  \"metrics\": {\n    \"conversation_id\": \"conv_dQ-dWRfzaWku\",\n    \"project_id\": \"proj_gGDP7hsSNiLT\",\n    \"provider\": \"ollama\",\n    \"model\": \"qwen2.5:1.5b\",\n    \"mode\": \"build\",\n    \"iterations\": 2,\n    \"tool_calls\": 1,\n    \"tool_errors\": 0,\n    \"message_count\": 4,\n    \"prompt_tokens\": 1808,\n    \"completion_tokens\": 97,\n    \"cached_tokens\": 1055,\n    \"total_tokens\": 1905,\n    \"duration_ms\": 86261,\n    \"status\": \"completed\",\n    \"error\": \"\",\n    \"started\": 1795484882682,\n    \"updated\": 1795484968943\n  },\n  \"result\": {\n    \"ok\": true,\n    \"conversation_id\": \"conv_dQ-dWRfzaWku\",\n    \"usage\": {\n      \"input_tokens\": 1808,\n      \"output_tokens\": 97,\n      \"cached_tokens\": 1055\n    },\n    \"tool_calls\": 1,\n    \"iterations\": 2,\n    \"text\": \"The file \\\"RUNTIME.md\\\" has been successfully created and written with the system identity information.\",\n    \"user_message_id\": \"msg_Rij9oJeLJiDv\"\n  }\n}",
+  "console": []
+}

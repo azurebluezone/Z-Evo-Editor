@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-11-24T01:52:34.932052+00:00",
+  "workspace": "/home/sahon/Downloads/skil/ai",
+  "db": "php/data/zc.sqlite",
+  "projects_dir": "php/workspaces",
+  "env_import_entries": 13,
+  "checks": [
+    {
+      "name": "infinite_models",
+      "ok": true,
+      "provider": "infinite",
+      "models": 10,
+      "base_url": "https://api.infiniteearningzone.com/v1"
+    },
+    {
+      "name": "infinite_chat",
+      "ok": true,
+      "provider": "infinite",
+      "model": "mission",
+      "content": "PONG",
+      "ms": 3580,
+      "total_tokens": 15
+    },
+    {
+      "name": "nvidia_models",
+      "ok": true,
+      "provider": "custom:nvidia",
+      "models": 32,
+      "base_url": "https://integrate.api.nvidia.com/v1"
+    },
+    {
+      "name": "nvidia_chat",
+      "ok": true,
+      "provider": "custom:nvidia",
+      "model": "meta/muse-glimmer-30b",
+      "content": "PONG",
+      "ms": 21364,
+      "total_tokens": 146,
+      "max_tokens": 512
+    },
+    {
+      "name": "mcp_initialize",
+      "ok": true,
+      "url": "https://api.infiniteearningzone.com/mcp",
+      "status": "connected",
+      "protocol": "2025-06-18",
+      "tools": 101,
+      "session_id": "zc-451f967e6e78148e70eee35c",
+      "enabled": false
+    },
+    {
+      "name": "admin_token_false",
+      "ok": true,
+      "no_token_status": 200
+    },
+    {
+      "name": "admin_token_true",
+      "ok": true,
+      "no_token_status": 401,
+      "with_token_status": 200
+    },
+    {
+      "name": "frontend_bootstrap",
+      "ok": true,
+      "php_url": "http://127.0.0.1:8788/index.php",
+      "has_project_id": true,
+      "has_csrf": true,
+      "has_identity": true,
+      "has_branding": true,
+      "has_contact": true
+    },
+    {
+      "name": "agent_task",
+      "ok": true,
+      "project": "ZombieCoder Runtime",
+      "path": "php/workspaces/zombiecoder-runtime",
+      "provider": "ollama",
+      "model": "qwen2.5:1.5b",
+      "status": "completed",
+      "iterations": 2,
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "total_tokens": 1905,
+      "duration_ms": 86261,
+      "file": "RUNTIME.md",
+      "file_bytes": 90,
+      "messages": [
+        {
+          "role": "user",
+          "name": "",
+          "content": "Create a file named RUNTIME.md in the active project. It must contain the system identity name ZombieCoder, version 1.0.0, owner Sahon Srabon, and the API base URL https://api.infiniteearningzone.com/v1. Use the write_file tool. Do not create any other file.",
+          "is_error": 0
+        },
+        {
+          "role": "assistant",
+          "name": "",
+          "content": "",
+          "is_error": 0
+        },
+        {
+          "role": "tool",
+          "name": "write_file",
+          "content": "wrote 90 bytes to RUNTIME.md",
+          "is_error": 0
+        },
+        {
+          "role": "assistant",
+          "name": "",
+          "content": "The file \"RUNTIME.md\" has been successfully created and written with the system identity information.",
+          "is_error": 0
+        }
+      ]
+    }
+  ]
+}

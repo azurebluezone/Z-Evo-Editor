@@ -1,0 +1,38 @@
+# Secrets and local environment
+.env
+**/.env
+!**/.env.example
+paten.md
+
+# Runtime data and caches
+php/data/
+php/data/*
+.softaculous/
+**/zc.sqlite
+**/zc.sqlite-*
+**/*.pid
+
+# Local tooling
+node_modules/
+vendor/
+.DS_Store
+
+# Local notes, transcripts and session media
+/A2Z.md
+/a_to_z.md
+/Plain.txt
+/select.css
+/_narration_*
+/_espeak_*
+/code-with-ai-*
+/softaculous-*
+/zc-audit-*
+
+# Local verification artifacts that are not part of the clean repo
+/php/verification/0*.png
+/php/verification/10-*.png
+/php/verification/selenium-result.json
+/php/verification/*.mp3
+/php/verification/*.txt
+/php/verification/*.log
+/php/workspaces/
